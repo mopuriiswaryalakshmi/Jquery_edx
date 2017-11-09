@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello, JQuery!</title>
+</head>
+<body>
+<!-- <script src='./scripts/jquery-3.2.1.slim.min.js'></script> this is downloaded file..The first option is to serve the file from your own server, just as you would serve any other image or other script file. Because you've already download the file, it's easy to simply ensure it's part of your project, deployed to your server, and then referenced in a page.this is yet another file that your server has to send to the user, which increases both the number of requests the server needs to handle and the amount of bandwidth required for the server to serve a page to a user. -->
+<h1>Hello, H1!</h1>
+<h1 class="demo">Hello, another H1!</h1>
+<h1 id="h1-id">Hello, another H1!</h1>
+<!-- <header>
+	<h1>Inside header</h1>
+</header> -->
+<header>
+    <div>
+    	<h1>Inside header</h1>
+    </div>
+</header>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+<script>
+	$(function(){
+		//will execute when page is ready
+		//alert('Hello World!');
+		//update the text
+		//$('h1').text('Hello, JQuery');
+		//$('h1.demo').text('Hello, jQuery') //all h1 elements with class demo
+		$('#h1-id').text('Hello, jQuery');
+		//So we can go in and grab all elements of a particular type.We can go in and grab all elements for the particular class.Or we can focus in on a particular element based on its ID.
+		//parent/child
+		$('header > h1').text('Parent child');
+		//descendant
+		$('header h1').text('Descendant');
+
+	});
+</script>
+</body>
+</html>
