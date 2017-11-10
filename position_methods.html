@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position Methods</title>
+</head>
+<body>
+	<div id="container">
+		<div>First</div>
+		<div>Second</div>
+		<div>Third</div>
+		<div id="target">Fourth(Target)</div>
+		<div>Fifth</div>
+		<div>Sixth</div>
+		<div>Seventh</div>
+	</div>
+
+	<div id="display"></div>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		$(function (){
+			//will execute when the page is ready
+			var element = $('#target');
+			var container = $('#container');
+
+			var index = container.children().index(element);
+
+			$('#display').text('Index is ' + index );
+		});
+	</script>
+</body>
+</html>
