@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifying text and HTML</title>
+
+<style>
+	body{
+		font-size: 32px;
+	}
+	div{
+		margin-top: .1em;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="target" >Demo Element</div>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		//will execute when the page is ready
+		$(function(){
+			
+		// will update as it is
+		$('#target').text('<u>Updated!</u')
+
+		});
+	</script>
+</body>
+</html>

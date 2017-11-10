@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding class</title>
+</head>
+<style>
+	div{
+		margin-top: .1em;
+	}
+	.red{
+		color:red;
+	}
+	.blue{
+		color:blue;
+	}
+</style>
+<body>
+	<div id="target">Demo Element</div>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			//will execute when the page is ready
+			$("#target").addClass('red');
+		})
+	</script>
+</body>
+</html>
