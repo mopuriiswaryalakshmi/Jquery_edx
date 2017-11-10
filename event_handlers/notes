@@ -1,0 +1,21 @@
+Registering EVENT HANDLERS
+
+1.jQuery allows you to centralize registration of event handlers
+
+->Remove from HTML
+
+->Easier to update
+
+-> Can be dynamic
+
+2.Accessing the event sender
+
+->Use "this" inside the event handler
+
+SYNTEX
+
+click:  $(item).click(function);
+
+hover: $(item).hover(function);
+
+mouseout: $(item).mouseout(function);

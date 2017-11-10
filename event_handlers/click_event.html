@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding class</title>
+
+<style>
+	body{
+		font-size: 32px;
+	}
+	div{
+		margin-top: .1em;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="target" >Demo Element</div>
+
+	<div id="display"></div>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			//will execute when the page is ready
+
+			/* And, we can access the object that raised the event by using the this keyword, as this will give us a reference to the object that raised the event. But, this is a DOM object, not a jQuery object. As a result, any of the jQuery methods we'd like to use aren't available, unless we convert it to a jQuery object by using the code below.*/
+			
+			$('#target').click(function(){
+				// this is the click event handler for the div element
+				$('#display').text('Div was clicked')
+			});
+
+		})
+	</script>
+</body>
+</html>

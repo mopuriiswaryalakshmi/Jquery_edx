@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>Hello, H1!</h1>
+
+	<header>
+		<div>
+			<h1>Inside header</h1>
+		</div>
+	</header>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+	<script>
+		$(function(){
+
+			// not direct parent/child
+			$('header  h1').text('Descendant');
+		});
+	</script>
+</body>
+</html>

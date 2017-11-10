@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding class</title>
+
+<style>
+	body{
+		font-size: 32px;
+	}
+	div{
+		margin-top: .1em;
+	}
+	
+</style>
+</head>
+<body>
+	<!-- in this two divs how can we get which div is selected -->
+	<div id="target" >Demo Element</div>
+
+	<div id="display">Another demo</div>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			//will execute when the page is ready
+			/*So it's not a jQuery object yet.It's the DOM element.So if I want to convert that to a jQuery object,which you'll typically do.You simply do that by saying $( and then this.So that will actually convert it to my jQuery object andnow I could go in and make my modification.So lets just update the text on tha*/
+			$('div').click(function(){
+				//alert('div was clicked');
+				//this is the **DOM element** of the item that raised the event
+				//so convert to jQuery Object
+				$(this).text('Clicked'); 
+			});
+		});
+	</script>
+</body>
+</html>

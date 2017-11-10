@@ -1,0 +1,5 @@
+The syntax for jQuery's each function is as follows:
+
+A collection (in the example we used a collection returned by a selector)
+The each function
+A callback function with a parameter. The name you use for the parameter will become the variable name assigned to each item in the collection.

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>Hello, H1!</h1>
+	 
+
+	<children>
+		<div class="demo">Current Object</div>
+		<div>
+			<div class = "other"></div>
+			<div class="demo">Object</div>
+		</div>
+	</children>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+	<script>
+		$(function(){
+			/*to find this 1st demo
+			<children>
+		<div class="demo">Current Object</div>*/
+			//parent/child
+			$(children('demo').text('Parent child');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Walking down the hierarchy :-
+children(optionalSelector) --> if it is directchild we should use this
+
+1.Direct children only
+
+2.Imagine children('.demo');
+
+find(optionalSelector)  --> find is used if it is not direct child
+
+1.walks the tree, looking for all desendants 
+
+2.imagine find('.demo')
+
+-------------------------------------
+Walking UP the hierarchy :-(from down parent(direct_parent) , parents(if_not_direct,and dont consider sibllings))
+
+
+
+parent(optionalSelector)
+
+1.Direct parent only
+
+2.imagine parent(.demo);
+
+parents(optionalSelector)
+
+1.walks the tree, looking for all parents
+
+2.imagine parents('.demo');
+
+3.not considring siblings
+

@@ -1,0 +1,9 @@
+Attribute based selectors
+ Equality:-          <h1 custom="banner">Hello, world</h1>    //Basically, that an attribute name has a particular value ///A class at the end of the day is just simply an attribute.
+                            $('h1[custom="banner"]')
+Starts with:-        <h1 class="col-md-5">Hello, world</h1>  //If I wanna find everything, or maybe every h1 that starts with col,you'll notice that you'll use a caret for that.And so this will give me everything that starts with col.
+                           $('h1[class^="col"]')
+Contains:-           <h1 class="col-md-5">Hello, world</h1>  //not it contained it, maybe everything that was targeted fora medium screen rather, I would use an asterisk and so that will give me everything that contains in md.
+                            $('h1[class*="md"]')
+ 
+In particular, quite frequently even you wanna be to find items based on something about an attribute, and again,just like in CSS, jQuery gives you that ability again using thatsame CSS syntax that you're potentially already familiar with.

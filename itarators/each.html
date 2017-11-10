@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding class</title>
+
+<style>
+	body{
+		font-size: 32px;
+	}
+	div{
+		margin-top: .1em;
+	}
+	
+</style>
+</head>
+<body>
+	<!-- in this two divs how can we get which div is selected -->
+	<div class="target" >Demo Element</div>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<!-- The syntax for jQuery's each function is as follows:A collection (in the example we used a collection returned by a selector)The each function A callback function with a parameter. The name you use for the parameter will become the variable name assigned to each item in the collection., jQuery does support methods such as index and get, and each collection that is returned can be accessed as an array, meaning there is a length property availabe. For/each is a common construct available-->
+	<script>
+	    var item = '0'
+		$(function(){
+			$('.target').each(function(item) {
+				item++
+		// item will be a variable that will represent each object
+		});
+		});
+	</script>
+</body>
+</html>
+<!-- The syntax for jQuery's each function is as follows:
+
+A collection (in the example we used a collection returned by a selector)
+The each function
+A callback function with a parameter. The name you use for the parameter will become the variable name assigned to each item in the collection. -->

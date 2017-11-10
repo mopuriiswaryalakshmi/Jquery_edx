@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding class</title>
+
+<style>
+	body{
+		font-size: 32px;
+	}
+	div{
+		margin-top: .1em;
+	}
+	
+</style>
+</head>
+<body>
+	<div class='blue'>Sample content</div>
+
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			//will execute when the page is ready
+			/*Notice how blue is missing . which is needed to indicate a class? Because that's not there, the CSS selector is instructing jQuery to look for an element named blue, rather than a class named blue. */
+			//$('blue').click(function() {
+			$('.blue').click(function() {
+    		alert('You clicked the div element!');
+			});
+
+		})
+	</script>
+</body>
+</html>
